@@ -45,6 +45,8 @@ class Pizza
     db.close
   end
 
+  #try these with just passing in id
+
   def self.update_all(area_to_update, update)
     db = PG.connect({dbname: 'pizza_shop', host: 'localhost' })
     sql = "UPDATE pizzas SET 
